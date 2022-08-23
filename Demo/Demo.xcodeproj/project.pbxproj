@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E08C34828B575BF00914066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08C33828B575BE00914066 /* ContentView.swift */; };
+		1E08C34928B575BF00914066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08C33828B575BE00914066 /* ContentView.swift */; };
+		1E08C34A28B575BF00914066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C33928B575BF00914066 /* Assets.xcassets */; };
+		1E08C34B28B575BF00914066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C33928B575BF00914066 /* Assets.xcassets */; };
+		1E08C35328B5763D00914066 /* NotAGif in Frameworks */ = {isa = PBXBuildFile; productRef = 1E08C35228B5763D00914066 /* NotAGif */; };
+		1E08C35528B5764100914066 /* NotAGif in Frameworks */ = {isa = PBXBuildFile; productRef = 1E08C35428B5764100914066 /* NotAGif */; };
+		1E08C35628B5765000914066 /* sloth_climb-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30128B5428700914066 /* sloth_climb-4.png */; };
+		1E08C35728B5765000914066 /* sloth_climb-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31628B5428700914066 /* sloth_climb-25.png */; };
+		1E08C35828B5765000914066 /* sloth_climb-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30528B5428700914066 /* sloth_climb-1.png */; };
+		1E08C35928B5765000914066 /* sloth_climb-17.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FF28B5428700914066 /* sloth_climb-17.png */; };
+		1E08C35A28B5765000914066 /* sloth_climb-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FD28B5428700914066 /* sloth_climb-29.png */; };
+		1E08C35B28B5765000914066 /* sloth_climb-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FE28B5428700914066 /* sloth_climb-5.png */; };
+		1E08C35C28B5765000914066 /* sloth_climb-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30328B5428700914066 /* sloth_climb-12.png */; };
+		1E08C35D28B5765000914066 /* sloth_climb-28.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2F828B5428700914066 /* sloth_climb-28.png */; };
+		1E08C35E28B5765000914066 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9014828AD4B4100F80A6C /* DemoApp.swift */; };
+		1E08C35F28B5765000914066 /* sloth_climb-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30928B5428700914066 /* sloth_climb-10.png */; };
+		1E08C36028B5765000914066 /* sloth_climb-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30628B5428700914066 /* sloth_climb-11.png */; };
+		1E08C36128B5765000914066 /* sloth_climb-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FC28B5428700914066 /* sloth_climb-15.png */; };
+		1E08C36228B5765000914066 /* sloth_climb-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30B28B5428700914066 /* sloth_climb-20.png */; };
+		1E08C36328B5765000914066 /* sloth_climb-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30828B5428700914066 /* sloth_climb-2.png */; };
+		1E08C36428B5765000914066 /* sloth_climb-23.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30D28B5428700914066 /* sloth_climb-23.png */; };
+		1E08C36528B5765000914066 /* sloth_climb-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31028B5428700914066 /* sloth_climb-8.png */; };
+		1E08C36628B5765000914066 /* sloth_climb-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FA28B5428700914066 /* sloth_climb-6.png */; };
+		1E08C36728B5765000914066 /* sloth_climb-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FB28B5428700914066 /* sloth_climb-7.png */; };
+		1E08C36828B5765000914066 /* sloth_climb-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30F28B5428700914066 /* sloth_climb-9.png */; };
+		1E08C36928B5765000914066 /* sloth_climb-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30428B5428700914066 /* sloth_climb-13.png */; };
+		1E08C36A28B5765000914066 /* sloth_climb-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2F928B5428700914066 /* sloth_climb-14.png */; };
+		1E08C36B28B5765000914066 /* sloth_climb-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30028B5428700914066 /* sloth_climb-16.png */; };
+		1E08C36C28B5765000914066 /* sloth_climb-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31328B5428700914066 /* sloth_climb-24.png */; };
+		1E08C36D28B5765000914066 /* sloth_climb-27.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30E28B5428700914066 /* sloth_climb-27.png */; };
+		1E08C36E28B5765000914066 /* sloth_climb-22.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30C28B5428700914066 /* sloth_climb-22.png */; };
+		1E08C36F28B5765000914066 /* sloth_climb-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30728B5428700914066 /* sloth_climb-3.png */; };
+		1E08C37028B5765000914066 /* sloth_climb-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31228B5428700914066 /* sloth_climb-30.png */; };
+		1E08C37128B5765000914066 /* sloth_climb-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31428B5428700914066 /* sloth_climb-18.png */; };
+		1E08C37228B5765000914066 /* sloth_climb-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30228B5428700914066 /* sloth_climb-0.png */; };
+		1E08C37328B5765000914066 /* sloth_climb-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31128B5428700914066 /* sloth_climb-26.png */; };
+		1E08C37428B5765000914066 /* sloth_climb-19.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31528B5428700914066 /* sloth_climb-19.png */; };
+		1E08C37528B5765000914066 /* sloth_climb-21.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30A28B5428700914066 /* sloth_climb-21.png */; };
+		1E08C37628B5765100914066 /* sloth_climb-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30128B5428700914066 /* sloth_climb-4.png */; };
+		1E08C37728B5765100914066 /* sloth_climb-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31628B5428700914066 /* sloth_climb-25.png */; };
+		1E08C37828B5765100914066 /* sloth_climb-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30528B5428700914066 /* sloth_climb-1.png */; };
+		1E08C37928B5765100914066 /* sloth_climb-17.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FF28B5428700914066 /* sloth_climb-17.png */; };
+		1E08C37A28B5765100914066 /* sloth_climb-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FD28B5428700914066 /* sloth_climb-29.png */; };
+		1E08C37B28B5765100914066 /* sloth_climb-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FE28B5428700914066 /* sloth_climb-5.png */; };
+		1E08C37C28B5765100914066 /* sloth_climb-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30328B5428700914066 /* sloth_climb-12.png */; };
+		1E08C37D28B5765100914066 /* sloth_climb-28.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2F828B5428700914066 /* sloth_climb-28.png */; };
+		1E08C37E28B5765100914066 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9014828AD4B4100F80A6C /* DemoApp.swift */; };
+		1E08C37F28B5765100914066 /* sloth_climb-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30928B5428700914066 /* sloth_climb-10.png */; };
+		1E08C38028B5765100914066 /* sloth_climb-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30628B5428700914066 /* sloth_climb-11.png */; };
+		1E08C38128B5765100914066 /* sloth_climb-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FC28B5428700914066 /* sloth_climb-15.png */; };
+		1E08C38228B5765100914066 /* sloth_climb-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30B28B5428700914066 /* sloth_climb-20.png */; };
+		1E08C38328B5765100914066 /* sloth_climb-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30828B5428700914066 /* sloth_climb-2.png */; };
+		1E08C38428B5765100914066 /* sloth_climb-23.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30D28B5428700914066 /* sloth_climb-23.png */; };
+		1E08C38528B5765100914066 /* sloth_climb-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31028B5428700914066 /* sloth_climb-8.png */; };
+		1E08C38628B5765100914066 /* sloth_climb-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FA28B5428700914066 /* sloth_climb-6.png */; };
+		1E08C38728B5765100914066 /* sloth_climb-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2FB28B5428700914066 /* sloth_climb-7.png */; };
+		1E08C38828B5765100914066 /* sloth_climb-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30F28B5428700914066 /* sloth_climb-9.png */; };
+		1E08C38928B5765100914066 /* sloth_climb-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30428B5428700914066 /* sloth_climb-13.png */; };
+		1E08C38A28B5765100914066 /* sloth_climb-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C2F928B5428700914066 /* sloth_climb-14.png */; };
+		1E08C38B28B5765100914066 /* sloth_climb-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30028B5428700914066 /* sloth_climb-16.png */; };
+		1E08C38C28B5765100914066 /* sloth_climb-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31328B5428700914066 /* sloth_climb-24.png */; };
+		1E08C38D28B5765100914066 /* sloth_climb-27.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30E28B5428700914066 /* sloth_climb-27.png */; };
+		1E08C38E28B5765100914066 /* sloth_climb-22.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30C28B5428700914066 /* sloth_climb-22.png */; };
+		1E08C38F28B5765100914066 /* sloth_climb-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30728B5428700914066 /* sloth_climb-3.png */; };
+		1E08C39028B5765100914066 /* sloth_climb-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31228B5428700914066 /* sloth_climb-30.png */; };
+		1E08C39128B5765100914066 /* sloth_climb-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31428B5428700914066 /* sloth_climb-18.png */; };
+		1E08C39228B5765100914066 /* sloth_climb-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30228B5428700914066 /* sloth_climb-0.png */; };
+		1E08C39328B5765100914066 /* sloth_climb-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31128B5428700914066 /* sloth_climb-26.png */; };
+		1E08C39428B5765100914066 /* sloth_climb-19.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C31528B5428700914066 /* sloth_climb-19.png */; };
+		1E08C39528B5765100914066 /* sloth_climb-21.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E08C30A28B5428700914066 /* sloth_climb-21.png */; };
+		1E08C39828B5784300914066 /* NotAGif in Frameworks */ = {isa = PBXBuildFile; productRef = 1E08C39728B5784300914066 /* NotAGif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E08C2F828B5428700914066 /* sloth_climb-28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-28.png"; sourceTree = "<group>"; };
+		1E08C2F928B5428700914066 /* sloth_climb-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-14.png"; sourceTree = "<group>"; };
+		1E08C2FA28B5428700914066 /* sloth_climb-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-6.png"; sourceTree = "<group>"; };
+		1E08C2FB28B5428700914066 /* sloth_climb-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-7.png"; sourceTree = "<group>"; };
+		1E08C2FC28B5428700914066 /* sloth_climb-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-15.png"; sourceTree = "<group>"; };
+		1E08C2FD28B5428700914066 /* sloth_climb-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-29.png"; sourceTree = "<group>"; };
+		1E08C2FE28B5428700914066 /* sloth_climb-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-5.png"; sourceTree = "<group>"; };
+		1E08C2FF28B5428700914066 /* sloth_climb-17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-17.png"; sourceTree = "<group>"; };
+		1E08C30028B5428700914066 /* sloth_climb-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-16.png"; sourceTree = "<group>"; };
+		1E08C30128B5428700914066 /* sloth_climb-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-4.png"; sourceTree = "<group>"; };
+		1E08C30228B5428700914066 /* sloth_climb-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-0.png"; sourceTree = "<group>"; };
+		1E08C30328B5428700914066 /* sloth_climb-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-12.png"; sourceTree = "<group>"; };
+		1E08C30428B5428700914066 /* sloth_climb-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-13.png"; sourceTree = "<group>"; };
+		1E08C30528B5428700914066 /* sloth_climb-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-1.png"; sourceTree = "<group>"; };
+		1E08C30628B5428700914066 /* sloth_climb-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-11.png"; sourceTree = "<group>"; };
+		1E08C30728B5428700914066 /* sloth_climb-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-3.png"; sourceTree = "<group>"; };
+		1E08C30828B5428700914066 /* sloth_climb-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-2.png"; sourceTree = "<group>"; };
+		1E08C30928B5428700914066 /* sloth_climb-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-10.png"; sourceTree = "<group>"; };
+		1E08C30A28B5428700914066 /* sloth_climb-21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-21.png"; sourceTree = "<group>"; };
+		1E08C30B28B5428700914066 /* sloth_climb-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-20.png"; sourceTree = "<group>"; };
+		1E08C30C28B5428700914066 /* sloth_climb-22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-22.png"; sourceTree = "<group>"; };
+		1E08C30D28B5428700914066 /* sloth_climb-23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-23.png"; sourceTree = "<group>"; };
+		1E08C30E28B5428700914066 /* sloth_climb-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-27.png"; sourceTree = "<group>"; };
+		1E08C30F28B5428700914066 /* sloth_climb-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-9.png"; sourceTree = "<group>"; };
+		1E08C31028B5428700914066 /* sloth_climb-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-8.png"; sourceTree = "<group>"; };
+		1E08C31128B5428700914066 /* sloth_climb-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-26.png"; sourceTree = "<group>"; };
+		1E08C31228B5428700914066 /* sloth_climb-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-30.png"; sourceTree = "<group>"; };
+		1E08C31328B5428700914066 /* sloth_climb-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-24.png"; sourceTree = "<group>"; };
+		1E08C31428B5428700914066 /* sloth_climb-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-18.png"; sourceTree = "<group>"; };
+		1E08C31528B5428700914066 /* sloth_climb-19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-19.png"; sourceTree = "<group>"; };
+		1E08C31628B5428700914066 /* sloth_climb-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sloth_climb-25.png"; sourceTree = "<group>"; };
+		1E08C33828B575BE00914066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E08C33928B575BF00914066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E08C33E28B575BF00914066 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E08C34328B575BF00914066 /* Animationdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animationdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E08C34528B575BF00914066 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1EC9014828AD4B4100F80A6C /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E08C33B28B575BF00914066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E08C35328B5763D00914066 /* NotAGif in Frameworks */,
+				1E08C39828B5784300914066 /* NotAGif in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E08C34028B575BF00914066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E08C35528B5764100914066 /* NotAGif in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E08C2F728B5428700914066 /* climb */ = {
+			isa = PBXGroup;
+			children = (
+				1E08C30228B5428700914066 /* sloth_climb-0.png */,
+				1E08C30528B5428700914066 /* sloth_climb-1.png */,
+				1E08C30828B5428700914066 /* sloth_climb-2.png */,
+				1E08C30728B5428700914066 /* sloth_climb-3.png */,
+				1E08C30128B5428700914066 /* sloth_climb-4.png */,
+				1E08C2FE28B5428700914066 /* sloth_climb-5.png */,
+				1E08C2FA28B5428700914066 /* sloth_climb-6.png */,
+				1E08C2FB28B5428700914066 /* sloth_climb-7.png */,
+				1E08C31028B5428700914066 /* sloth_climb-8.png */,
+				1E08C30F28B5428700914066 /* sloth_climb-9.png */,
+				1E08C30928B5428700914066 /* sloth_climb-10.png */,
+				1E08C30628B5428700914066 /* sloth_climb-11.png */,
+				1E08C30328B5428700914066 /* sloth_climb-12.png */,
+				1E08C30428B5428700914066 /* sloth_climb-13.png */,
+				1E08C2F928B5428700914066 /* sloth_climb-14.png */,
+				1E08C2FC28B5428700914066 /* sloth_climb-15.png */,
+				1E08C30028B5428700914066 /* sloth_climb-16.png */,
+				1E08C2FF28B5428700914066 /* sloth_climb-17.png */,
+				1E08C31428B5428700914066 /* sloth_climb-18.png */,
+				1E08C31528B5428700914066 /* sloth_climb-19.png */,
+				1E08C30B28B5428700914066 /* sloth_climb-20.png */,
+				1E08C30A28B5428700914066 /* sloth_climb-21.png */,
+				1E08C30C28B5428700914066 /* sloth_climb-22.png */,
+				1E08C30D28B5428700914066 /* sloth_climb-23.png */,
+				1E08C31328B5428700914066 /* sloth_climb-24.png */,
+				1E08C31628B5428700914066 /* sloth_climb-25.png */,
+				1E08C31128B5428700914066 /* sloth_climb-26.png */,
+				1E08C30E28B5428700914066 /* sloth_climb-27.png */,
+				1E08C2F828B5428700914066 /* sloth_climb-28.png */,
+				1E08C2FD28B5428700914066 /* sloth_climb-29.png */,
+				1E08C31228B5428700914066 /* sloth_climb-30.png */,
+			);
+			path = climb;
+			sourceTree = "<group>";
+		};
+		1E08C33628B575BD00914066 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1E08C2F728B5428700914066 /* climb */,
+				1EC9014828AD4B4100F80A6C /* DemoApp.swift */,
+				1E08C33828B575BE00914066 /* ContentView.swift */,
+				1E08C33928B575BF00914066 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1E08C34428B575BF00914066 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E08C34528B575BF00914066 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1E14EFC028AD4CEE00E62145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EC9013C28AD4B4100F80A6C = {
+			isa = PBXGroup;
+			children = (
+				1E08C33628B575BD00914066 /* Shared */,
+				1E08C34428B575BF00914066 /* macOS */,
+				1EC9014628AD4B4100F80A6C /* Products */,
+				1E14EFC028AD4CEE00E62145 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1EC9014628AD4B4100F80A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E08C33E28B575BF00914066 /* Demo.app */,
+				1E08C34328B575BF00914066 /* Animationdemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E08C33D28B575BF00914066 /* Demo (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E08C34C28B575BF00914066 /* Build configuration list for PBXNativeTarget "Demo (iOS)" */;
+			buildPhases = (
+				1E08C33A28B575BF00914066 /* Sources */,
+				1E08C33B28B575BF00914066 /* Frameworks */,
+				1E08C33C28B575BF00914066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo (iOS)";
+			packageProductDependencies = (
+				1E08C35228B5763D00914066 /* NotAGif */,
+				1E08C39728B5784300914066 /* NotAGif */,
+			);
+			productName = "Animationdemo (iOS)";
+			productReference = 1E08C33E28B575BF00914066 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E08C34228B575BF00914066 /* Demo (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E08C34F28B575BF00914066 /* Build configuration list for PBXNativeTarget "Demo (macOS)" */;
+			buildPhases = (
+				1E08C33F28B575BF00914066 /* Sources */,
+				1E08C34028B575BF00914066 /* Frameworks */,
+				1E08C34128B575BF00914066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo (macOS)";
+			packageProductDependencies = (
+				1E08C35428B5764100914066 /* NotAGif */,
+			);
+			productName = "Animationdemo (macOS)";
+			productReference = 1E08C34328B575BF00914066 /* Animationdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EC9013D28AD4B4100F80A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1E08C33D28B575BF00914066 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1E08C34228B575BF00914066 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1EC9014028AD4B4100F80A6C /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EC9013C28AD4B4100F80A6C;
+			packageReferences = (
+				1E08C39628B5784300914066 /* XCRemoteSwiftPackageReference "NotAGif" */,
+			);
+			productRefGroup = 1EC9014628AD4B4100F80A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E08C33D28B575BF00914066 /* Demo (iOS) */,
+				1E08C34228B575BF00914066 /* Demo (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E08C33C28B575BF00914066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E08C38728B5765100914066 /* sloth_climb-7.png in Resources */,
+				1E08C34A28B575BF00914066 /* Assets.xcassets in Resources */,
+				1E08C39428B5765100914066 /* sloth_climb-19.png in Resources */,
+				1E08C39228B5765100914066 /* sloth_climb-0.png in Resources */,
+				1E08C39028B5765100914066 /* sloth_climb-30.png in Resources */,
+				1E08C39528B5765100914066 /* sloth_climb-21.png in Resources */,
+				1E08C38A28B5765100914066 /* sloth_climb-14.png in Resources */,
+				1E08C38D28B5765100914066 /* sloth_climb-27.png in Resources */,
+				1E08C38928B5765100914066 /* sloth_climb-13.png in Resources */,
+				1E08C38028B5765100914066 /* sloth_climb-11.png in Resources */,
+				1E08C38F28B5765100914066 /* sloth_climb-3.png in Resources */,
+				1E08C37A28B5765100914066 /* sloth_climb-29.png in Resources */,
+				1E08C38E28B5765100914066 /* sloth_climb-22.png in Resources */,
+				1E08C37628B5765100914066 /* sloth_climb-4.png in Resources */,
+				1E08C39128B5765100914066 /* sloth_climb-18.png in Resources */,
+				1E08C38828B5765100914066 /* sloth_climb-9.png in Resources */,
+				1E08C38128B5765100914066 /* sloth_climb-15.png in Resources */,
+				1E08C38228B5765100914066 /* sloth_climb-20.png in Resources */,
+				1E08C37928B5765100914066 /* sloth_climb-17.png in Resources */,
+				1E08C38428B5765100914066 /* sloth_climb-23.png in Resources */,
+				1E08C38628B5765100914066 /* sloth_climb-6.png in Resources */,
+				1E08C37B28B5765100914066 /* sloth_climb-5.png in Resources */,
+				1E08C38528B5765100914066 /* sloth_climb-8.png in Resources */,
+				1E08C37C28B5765100914066 /* sloth_climb-12.png in Resources */,
+				1E08C39328B5765100914066 /* sloth_climb-26.png in Resources */,
+				1E08C38328B5765100914066 /* sloth_climb-2.png in Resources */,
+				1E08C38C28B5765100914066 /* sloth_climb-24.png in Resources */,
+				1E08C38B28B5765100914066 /* sloth_climb-16.png in Resources */,
+				1E08C37828B5765100914066 /* sloth_climb-1.png in Resources */,
+				1E08C37F28B5765100914066 /* sloth_climb-10.png in Resources */,
+				1E08C37728B5765100914066 /* sloth_climb-25.png in Resources */,
+				1E08C37D28B5765100914066 /* sloth_climb-28.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E08C34128B575BF00914066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E08C36728B5765000914066 /* sloth_climb-7.png in Resources */,
+				1E08C34B28B575BF00914066 /* Assets.xcassets in Resources */,
+				1E08C37428B5765000914066 /* sloth_climb-19.png in Resources */,
+				1E08C37228B5765000914066 /* sloth_climb-0.png in Resources */,
+				1E08C37028B5765000914066 /* sloth_climb-30.png in Resources */,
+				1E08C37528B5765000914066 /* sloth_climb-21.png in Resources */,
+				1E08C36A28B5765000914066 /* sloth_climb-14.png in Resources */,
+				1E08C36D28B5765000914066 /* sloth_climb-27.png in Resources */,
+				1E08C36928B5765000914066 /* sloth_climb-13.png in Resources */,
+				1E08C36028B5765000914066 /* sloth_climb-11.png in Resources */,
+				1E08C36F28B5765000914066 /* sloth_climb-3.png in Resources */,
+				1E08C35A28B5765000914066 /* sloth_climb-29.png in Resources */,
+				1E08C36E28B5765000914066 /* sloth_climb-22.png in Resources */,
+				1E08C35628B5765000914066 /* sloth_climb-4.png in Resources */,
+				1E08C37128B5765000914066 /* sloth_climb-18.png in Resources */,
+				1E08C36828B5765000914066 /* sloth_climb-9.png in Resources */,
+				1E08C36128B5765000914066 /* sloth_climb-15.png in Resources */,
+				1E08C36228B5765000914066 /* sloth_climb-20.png in Resources */,
+				1E08C35928B5765000914066 /* sloth_climb-17.png in Resources */,
+				1E08C36428B5765000914066 /* sloth_climb-23.png in Resources */,
+				1E08C36628B5765000914066 /* sloth_climb-6.png in Resources */,
+				1E08C35B28B5765000914066 /* sloth_climb-5.png in Resources */,
+				1E08C36528B5765000914066 /* sloth_climb-8.png in Resources */,
+				1E08C35C28B5765000914066 /* sloth_climb-12.png in Resources */,
+				1E08C37328B5765000914066 /* sloth_climb-26.png in Resources */,
+				1E08C36328B5765000914066 /* sloth_climb-2.png in Resources */,
+				1E08C36C28B5765000914066 /* sloth_climb-24.png in Resources */,
+				1E08C36B28B5765000914066 /* sloth_climb-16.png in Resources */,
+				1E08C35828B5765000914066 /* sloth_climb-1.png in Resources */,
+				1E08C35F28B5765000914066 /* sloth_climb-10.png in Resources */,
+				1E08C35728B5765000914066 /* sloth_climb-25.png in Resources */,
+				1E08C35D28B5765000914066 /* sloth_climb-28.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E08C33A28B575BF00914066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E08C37E28B5765100914066 /* DemoApp.swift in Sources */,
+				1E08C34828B575BF00914066 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E08C33F28B575BF00914066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E08C35E28B5765000914066 /* DemoApp.swift in Sources */,
+				1E08C34928B575BF00914066 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1E08C34D28B575BF00914066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.notagif.demo;
+				PRODUCT_NAME = Demo;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E08C34E28B575BF00914066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.notagif.demo;
+				PRODUCT_NAME = Demo;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E08C35028B575BF00914066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.notagif.demo;
+				PRODUCT_NAME = Animationdemo;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1E08C35128B575BF00914066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.curzel.notagif.demo;
+				PRODUCT_NAME = Animationdemo;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1EC9015228AD4B4200F80A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EC9015328AD4B4200F80A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E08C34C28B575BF00914066 /* Build configuration list for PBXNativeTarget "Demo (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E08C34D28B575BF00914066 /* Debug */,
+				1E08C34E28B575BF00914066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E08C34F28B575BF00914066 /* Build configuration list for PBXNativeTarget "Demo (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E08C35028B575BF00914066 /* Debug */,
+				1E08C35128B575BF00914066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC9014028AD4B4100F80A6C /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC9015228AD4B4200F80A6C /* Debug */,
+				1EC9015328AD4B4200F80A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E08C39628B5784300914066 /* XCRemoteSwiftPackageReference "NotAGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/curzel-it/NotAGif/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E08C35228B5763D00914066 /* NotAGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NotAGif;
+		};
+		1E08C35428B5764100914066 /* NotAGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NotAGif;
+		};
+		1E08C39728B5784300914066 /* NotAGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E08C39628B5784300914066 /* XCRemoteSwiftPackageReference "NotAGif" */;
+			productName = NotAGif;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1EC9013D28AD4B4100F80A6C /* Project object */;
+}

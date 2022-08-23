@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "notagif",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/curzel-it/NotAGif/",
+      "state" : {
+        "branch" : "main",
+        "revision" : "91ae2bec14ac67e6f138eefbb0054aa8996a70a1"
+      }
+    }
+  ],
+  "version" : 2
+}
