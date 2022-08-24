@@ -10,7 +10,7 @@ public class TimedContentProvider<Content> {
     public let frameTime: TimeInterval = 0.1
     public let loopDuracy: TimeInterval
     
-    var onFirstFrameLoaded: ((Int) -> Void)?
+    var onFirstFrameOfLoopLoaded: ((Int) -> Void)?
     var onLoopCompleted: ((Int) -> Void)?
     var currentFrameIndex: Int = 0
     var completedLoops: Int = 0
@@ -19,12 +19,12 @@ public class TimedContentProvider<Content> {
     
     public init(
         frames: [Content],
-        onFirstFrameLoaded: ((Int) -> Void)? = nil,
+        onFirstFrameOfLoopLoaded: ((Int) -> Void)? = nil,
         onLoopCompleted: ((Int) -> Void)? = nil
     ) {
         self.frames = frames
         self.loopDuracy = TimeInterval(frames.count) * frameTime
-        self.onFirstFrameLoaded = onFirstFrameLoaded
+        self.onFirstFrameOfLoopLoaded = onFirstFrameOfLoopLoaded
         self.onLoopCompleted = onLoopCompleted
     }
     
@@ -53,7 +53,7 @@ public class TimedContentProvider<Content> {
     
     private func handleFirstFrameOfFirstLoopIfNeeded() {
         if completedLoops == 0 && currentFrameIndex == 0 && leftoverTime == 0 {
-            onFirstFrameLoaded?(0)
+            onFirstFrameOfLoopLoaded?(0)
         }
     }
     
@@ -61,13 +61,13 @@ public class TimedContentProvider<Content> {
         if nextIndex < currentFrameIndex {
             completedLoops += 1
             onLoopCompleted?(completedLoops)
-            onFirstFrameLoaded?(completedLoops)
+            onFirstFrameOfLoopLoaded?(completedLoops)
         }
         currentFrameIndex = nextIndex
     }
     
-    public func invalidate() {
-        self.onFirstFrameLoaded = nil
+    public func clearHooks() {
+        self.onFirstFrameOfLoopLoaded = nil
         self.onLoopCompleted = nil
     }
 }

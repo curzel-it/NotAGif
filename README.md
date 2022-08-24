@@ -1,23 +1,30 @@
 # NotAGif
 
-Package to render Gif-like animated images.
+For certain kinds animations it's not too uncommon to be exported as a series of single images.
 
-If you have animation frames stored as images, you can use this package to display them with fps control.
+They usually follow a naming scheme like: 
+* `sloth_climb-0.png`
+* `sloth_climb-1.png`
+* `sloth_climb-2.png`
+* ...
+* `sloth_walk-0.png`
+* `sloth_walk-1.png`
+* ...
 
-Works with both iOS and macOS and supports custom filename formattings.
+This package just offers the basic tools to render those!
+
+* Written in SwiftUI
+* Supports both macOS (NSImage) and iOS (UIImage)
+* Supports custom file name formats
+* Fps control
 
 ![Demo](demo.gif)
 
 ## Usage 
 
-### Basics
+### <a id="Basics"></a>Basics
 
-Say you have a set of images named that compose an animation:
-* sloth_climb-0.png
-* sloth_climb-1.png
-* sloth_climb-2.png
-* sloth_climb-3.png
-* ...
+Assuming you want to render an animation composed of image frames (see example above):
 
 ``` swift
 import SwiftUI
@@ -25,8 +32,11 @@ import NotAGif
 
 struct ContentView: View {
 
-    let animationFrames = FramesProvider(format: "%@-%d", fileExtension: .png, in: Bundle.main)
-        .frames(baseName: "sloth_climb")
+    let framesProvider = FramesProvider(format: "%@-%d", fileExtension: .png, in: Bundle.main)
+
+    var animationFrames: [UIImage] {
+        framesProvider.frames(baseName: "sloth_climb")
+    }
 
     var body: some View {
         AnimatedImage(frames: animationFrames, fps: 10)
@@ -34,9 +44,11 @@ struct ContentView: View {
 } 
 ```
 
-### Using custom views 
+### <a id="CustomViews"></a> Custom Views 
 
-Let's say the images you want to render are in pixel art style, this requires disabling image interpolation:
+Let's say the images you want to render are in pixel art style, this generally requires to disable image interpolation.
+
+Use `AnimatedContent` for custom rendering:
 
 ``` swift
 import SwiftUI
@@ -44,12 +56,15 @@ import NotAGif
 
 struct ContentView: View {
 
-    let animationFrames = FramesProvider(format: "%@-%d", fileExtension: .png, in: Bundle.main)
-        .frames(baseName: "sloth_climb")
+    let framesProvider = FramesProvider(format: "%@-%d", fileExtension: .png, in: Bundle.main)
+
+    var animationFrames: [UIImage] {
+        framesProvider.frames(baseName: "sloth_climb")
+    }
 
     var body: some View {
-        AnimatedContent(frames: animationFrames, fps: 10) { image in
-            Image(image, scale: 1, label: Text(""))
+        AnimatedContent(frames: animationFrames, fps: 10) { imageFrame in
+            Image(frame: imageFrame)
                 .interpolation(.none)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
@@ -57,3 +72,25 @@ struct ContentView: View {
     }
 } 
 ```
+
+## Contents
+
+### ImageFrame
+Typealias for either UIImage or NSImage depending on the platform.
+
+### AnimatedImage
+View capable of rendering a given set of images with fps control. See [example](#Basics).
+
+### AnimatedContent 
+Can be used if you need custom rendering for image. See [example](#CustomViews).
+
+### TimedContentProvider
+Decides which frame is to be loaded given the time since the last update.
+
+It is the underlying logic used to implement both `AnimatedImage` and `AnimatedContent`.
+
+Use the `nextFrame(after:)` to get the next frame to be rendered, or nil if there are no changes.
+
+Finally, you can set `onFirstFrameOfLoopLoaded` and `onLoopCompleted` if you need finer control over when a loop starts or ends.
+
+The idea is that you can use if you need multiple animations in sync, already have a timer around your app (maybe a game?) or if you wish to do the rendering in some other way.
