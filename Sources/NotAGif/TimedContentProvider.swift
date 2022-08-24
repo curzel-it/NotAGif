@@ -4,7 +4,7 @@
 
 import Foundation
 
-public class TimedContentProvider<Content> {
+open class TimedContentProvider<Content> {
     
     public let frames: [Content]
     public let frameTime: TimeInterval = 0.1
@@ -28,7 +28,7 @@ public class TimedContentProvider<Content> {
         self.onLoopCompleted = onLoopCompleted
     }
     
-    public func nextFrame(after time: TimeInterval) -> Content? {
+    open func nextFrame(after time: TimeInterval) -> Content? {
         guard frames.count > 0 else { return nil }
         
         handleFirstFrameOfFirstLoopIfNeeded()
