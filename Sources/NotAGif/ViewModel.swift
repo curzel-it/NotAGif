@@ -9,13 +9,11 @@ class ViewModel: ObservableObject {
     @Published var currentFrame: ImageFrame?
     
     private let animator: TimedContentProvider<ImageFrame>
-    private let fps: TimeInterval
     private var lastUpdate: Date = Date()
     private var timer: Timer!
     
     init(frames: [ImageFrame], fps: TimeInterval) {
-        self.animator = TimedContentProvider(frames: frames)
-        self.fps = fps
+        self.animator = TimedContentProvider(frames: frames, fps: fps)
         scheduleUpdates()
     }
     
@@ -31,7 +29,7 @@ class ViewModel: ObservableObject {
     
     private func scheduleUpdates() {
         stop()
-        timer = Timer(timeInterval: 1/fps, repeats: true) { [weak self] timer in
+        timer = Timer(timeInterval: animator.frameTime, repeats: true) { [weak self] timer in
             guard let self = self else {
                 timer.invalidate()
                 return

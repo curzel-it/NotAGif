@@ -7,7 +7,7 @@ import Foundation
 open class TimedContentProvider<Content> {
     
     public let frames: [Content]
-    public let frameTime: TimeInterval = 0.1
+    public let frameTime: TimeInterval
     public let loopDuracy: TimeInterval
     
     var onFirstFrameOfLoopLoaded: ((Int) -> Void)?
@@ -19,10 +19,12 @@ open class TimedContentProvider<Content> {
     
     public init(
         frames: [Content],
+        fps: TimeInterval,
         onFirstFrameOfLoopLoaded: ((Int) -> Void)? = nil,
         onLoopCompleted: ((Int) -> Void)? = nil
     ) {
         self.frames = frames
+        self.frameTime = 1/fps
         self.loopDuracy = TimeInterval(frames.count) * frameTime
         self.onFirstFrameOfLoopLoaded = onFirstFrameOfLoopLoaded
         self.onLoopCompleted = onLoopCompleted

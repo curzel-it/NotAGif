@@ -9,14 +9,14 @@ import XCTest
 class TimedContentProviderTests: XCTestCase {
     
     func testLoopDuracyIsProperlyCalculated() {
-        let frames = [Int](repeating: 0, count: 10)
-        let animation = TimedContentProvider(frames: frames)
+        let frames = [Int](repeating: 0, count: 12)
+        let animation = TimedContentProvider(frames: frames, fps: 12)
         XCTAssertEqual(animation.loopDuracy, 1)
     }
     
     func testFramesUpdateWhenNeeded() {
         let frames = [Int](repeating: 0, count: 10)
-        let animation = TimedContentProvider(frames: frames)
+        let animation = TimedContentProvider(frames: frames, fps: 10)
         XCTAssertEqual(animation.currentFrameIndex, 0)
         _ = animation.nextFrame(after: 0.05)
         XCTAssertEqual(animation.currentFrameIndex, 0)
