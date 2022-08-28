@@ -15,6 +15,7 @@ class ViewModel: ObservableObject {
     init(frames: [ImageFrame], fps: TimeInterval) {
         self.animator = TimedContentProvider(frames: frames, fps: fps)
         scheduleUpdates()
+        update()
     }
     
     func stop() {

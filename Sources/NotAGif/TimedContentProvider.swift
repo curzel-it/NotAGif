@@ -30,6 +30,11 @@ open class TimedContentProvider<Content> {
         self.onLoopCompleted = onLoopCompleted
     }
     
+    public func currentFrame() -> Content? {
+        guard currentFrameIndex < frames.count else { return nil }
+        return frames[currentFrameIndex]
+    }
+    
     open func nextFrame(after time: TimeInterval) -> Content? {
         guard frameTime > 0 && frames.count > 0 else { return nil }
         
