@@ -24,14 +24,14 @@ open class TimedContentProvider<Content> {
         onLoopCompleted: ((Int) -> Void)? = nil
     ) {
         self.frames = frames
-        self.frameTime = 1/fps
+        self.frameTime = fps > 0 ? 1/fps : 0
         self.loopDuracy = TimeInterval(frames.count) * frameTime
         self.onFirstFrameOfLoopLoaded = onFirstFrameOfLoopLoaded
         self.onLoopCompleted = onLoopCompleted
     }
     
     open func nextFrame(after time: TimeInterval) -> Content? {
-        guard frames.count > 0 else { return nil }
+        guard frameTime > 0 && frames.count > 0 else { return nil }
         
         handleFirstFrameOfFirstLoopIfNeeded()
         

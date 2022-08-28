@@ -14,6 +14,17 @@ class TimedContentProviderTests: XCTestCase {
         XCTAssertEqual(animation.loopDuracy, 1)
     }
     
+    func testZeroFpsLeadsToZeroLoopDuracyAndFrameTime() {
+        let animation = TimedContentProvider(frames: [1, 2, 3], fps: 0)
+        XCTAssertEqual(animation.loopDuracy, 0)
+        XCTAssertEqual(animation.frameTime, 0)
+    }
+    
+    func testZeroFramesLeadsToZeroLoopDuracy() {
+        let animation = TimedContentProvider(frames: [], fps: 1)
+        XCTAssertEqual(animation.loopDuracy, 0)
+    }
+    
     func testFramesUpdateWhenNeeded() {
         let frames = [Int](repeating: 0, count: 10)
         let animation = TimedContentProvider(frames: frames, fps: 10)
