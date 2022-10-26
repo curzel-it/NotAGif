@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "NotAGif",
-    platforms: [.macOS(.v12), .iOS(.v15)],
+    platforms: [.macOS(.v11), .iOS(.v14)],
     products: [
         .library(
             name: "NotAGif",
