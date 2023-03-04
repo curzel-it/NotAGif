@@ -1,11 +1,6 @@
-//
-// NotAGif.
-//
-
 import SwiftUI
 
 open class FramesProvider<T: ResourcesLocator> {
-    
     let format: String
     let resources: T
     let fileExtension: ImageFileExtension
@@ -18,12 +13,7 @@ open class FramesProvider<T: ResourcesLocator> {
     
     public func frames(baseName: String) -> [ImageFrame] {
         urls(baseName: baseName).compactMap {
-#if os(macOS)
-            return NSImage(contentsOf: $0)
-#else
-            guard let data = try? Data(contentsOf: $0) else { return nil }
-            return UIImage(data: data)
-#endif
+            ImageFrame(contentsOf: $0)
         }
     }
     
@@ -56,8 +46,7 @@ public protocol ResourcesLocator {
     func url(forResource: String, withExtension: ImageFileExtension) -> URL?
 }
 
-extension Bundle: ResourcesLocator {
-    
+extension Bundle: ResourcesLocator {    
     public func url(forResource name: String, withExtension ext: ImageFileExtension) -> URL? {
         url(forResource: name, withExtension: ext.rawValue)
     }

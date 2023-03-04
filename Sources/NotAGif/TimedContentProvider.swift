@@ -1,11 +1,6 @@
-//
-// NotAGif.
-//
-
 import Foundation
 
-open class TimedContentProvider<Content> {
-    
+open class TimedContentProvider<Content> {    
     public let frames: [Content]
     public let frameTime: TimeInterval
     public let loopDuracy: TimeInterval

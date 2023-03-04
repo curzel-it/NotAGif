@@ -1,11 +1,6 @@
-//
-// NotAGif.
-//
-
 import SwiftUI
 
-public struct AnimatedContent<Content: View>: View {
-    
+public struct AnimatedContent<Content: View>: View {    
     @StateObject private var viewModel: ViewModel
     
     let content: (ImageFrame) -> Content

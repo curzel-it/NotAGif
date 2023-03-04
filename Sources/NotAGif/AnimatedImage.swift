@@ -1,11 +1,6 @@
-//
-// NotAGif.
-//
-
 import SwiftUI
 
 public struct AnimatedImage: View {
-    
     let frames: [ImageFrame]
     let fps: TimeInterval
     
@@ -15,12 +10,8 @@ public struct AnimatedImage: View {
     }
     
     public var body: some View {
-        AnimatedContent(frames: frames, fps: fps) { frame in
-#if os(macOS)
-            Image(nsImage: frame)
-#else
-            Image(uiImage: frame)
-#endif
+        AnimatedContent(frames: frames, fps: fps) {
+            Image(frame: $0)
         }
     }
 }

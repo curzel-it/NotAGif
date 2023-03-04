@@ -1,11 +1,6 @@
-//
-// NotAGif.
-//
-
 import SwiftUI
 
 class ViewModel: ObservableObject {
-    
     @Published var currentFrame: ImageFrame?
     
     private let animator: TimedContentProvider<ImageFrame>
